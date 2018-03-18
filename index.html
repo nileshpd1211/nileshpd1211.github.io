@@ -32,7 +32,9 @@ Task to be done:
   <b> D</b> is  <i> n x L </i> matrix where each column is a word and consists L words in total. Popular selection for <b>D</b>are : Fourier,
 wavelet, wavelet packet, cosine packet, and curvelet etc.
   <p> Sparse representation means to look for a good
-expression with fewest words, namely <a href="https://www.codecogs.com/eqnedit.php?latex=\left&space;|&space;\left&space;|&space;\alpha&space;\right&space;|&space;\right|&space;<&space;<&space;n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left&space;|&space;\left&space;|&space;\alpha&space;\right&space;|&space;\right|&space;<&space;<&space;n" title="\left | \left | \alpha \right | \right| < < n" /></a> . In most
+    expression with fewest words, namely <a href <b> H </b> as a weighted sum of finitely many
+functions <i> g <\i> taken from <b> D </b>D An approximation with {\displaystyle N} N atoms has the form 
+  ="https://www.codecogs.com/eqnedit.php?latex=\left&space;|&space;\left&space;|&space;\alpha&space;\right&space;|&space;\right|&space;<&space;<&space;n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left&space;|&space;\left&space;|&space;\alpha&space;\right&space;|&space;\right|&space;<&space;<&space;n" title="\left | \left | \alpha \right | \right| < < n" /></a> . In most
 applications, the dictionary is selected as a priori from the common orthogonal bases such as Fourier, wavelet etc.
 or combinations of them. 
     
@@ -53,5 +55,13 @@ K-SVD is consisted of two steps: sparse coding stage searching for the sparse re
 dictionary update stage revising the dictionary using SVD decomposition. This process can be interpreted as updating
 the representation and the dictionary in an alternating fashion.
   
+  </p>
+
+  <p>
+    Matching pursuit (MP) is a sparse approximation algorithm which involves finding the
+    "best matching" projections of multidimensional data onto the span of an over-complete (i.e., redundant) dictionary <b> D </b>.
+    The basic idea is to approximately represent a signal <i> f<\f> from Hilbert space <b> H </b> as a weighted sum of finitely many
+    functions <i> g <\i> taken from <b> D </b>D An approximation with {\displaystyle N} N atoms has the form 
+    
   
   
