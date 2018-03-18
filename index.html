@@ -14,7 +14,7 @@ good reputation in both theoretical research and practical applications. Many di
 proposed for sparse representation. The main purpose of this project is to provide an experimental study of applying 
 sparse representation in an iterative manner. We approach this study using two techniques namely orthogonal matching pursuit(OMP)
 and KSVD
-
+Task to be done:
 <ul>
   <li>To create an overcomplete dictionary by using the K-SVD approach</li>
   <li>Create a sparse distribution using iterative sparse coding</li>
@@ -29,6 +29,13 @@ and KSVD
   ,we can represent it as: <a href="https://www.codecogs.com/eqnedit.php?latex=x&space;=&space;\mathbf{D}\&space;\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;=&space;\mathbf{D}\&space;\alpha" title="x = \mathbf{D}\ \alpha" /></a>
   where <b>D</b> indicates the dictionary we choose, and <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a>
   is the expression for <b>x</b> in the new represented space.
+  <b> D</b> is  <i> n x L </i> matrix where each column is a word and consists L words in total. Popular selection for <b>D</b>are : Fourier,
+wavelet, wavelet packet, cosine packet, and curvelet etc.
+  <p> Sparse representation means to look for a good
+expression with fewest words, namely <a href="https://www.codecogs.com/eqnedit.php?latex=\left&space;|&space;\left&space;|&space;\alpha&space;\right&space;|&space;\right|&space;<&space;<&space;n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left&space;|&space;\left&space;|&space;\alpha&space;\right&space;|&space;\right|&space;<&space;<&space;n" title="\left | \left | \alpha \right | \right| < < n" /></a> . In most
+applications, the dictionary is selected as a priori from the common orthogonal bases such as Fourier, wavelet etc.
+or combinations of them. 
+    
   
   
   
